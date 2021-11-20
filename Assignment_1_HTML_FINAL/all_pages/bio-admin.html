@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Admin Page
+    </title>
+    
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="head">
+      Update your Biography
+    </div>     
+
+    <body>
+        <div class="navbar">
+             <div class= "Home">
+                <a href="index.html" target="_blank">Home</a>
+              </div>
+              <div class= "Publications">
+                <a href="pub.html" target="_blank">Publications</a>
+              </div>
+              <div class= "Press">
+                <a href="press.html" target="_blank">Press</a>
+              </div>
+              <div class= "research">
+                <a href="research.html" target="_blank">Research Interest and Programs</a>
+              </div>
+              <div class= "teaching">
+                <a href="teaching.html" target="_blank">Teaching</a>
+              </div>
+
+              <div class= "group">
+                <a href="group.html" target="_blank">Research Group</a>
+              </div>
+              <div class= "contact">
+                <a href="contact.html" target="_blank">Contact</a>
+              </div>
+        </div>
+        
+  
+        <form method="GET" action="index.html" id="form">
+            Your bio:<br>
+            <input class="bio" id="bio" type="text" name="bio">
+            <br>
+            <br>
+            <input type='submit' value='Update Bio ' />  
+            <br>
+            <br>
+            <br>
+            <div class="profilepicture">
+                <label class="-label" for="file">
+                    <span>Update Image</span>
+                  </label>
+                  <input id="file" type="file" onclick="file_changed()"/>
+                  <img src="images/profile.jpg"  width="200",height="500"><br>
+
+        </form>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <script src="myscript.js"></script>
+    
+
+    </body>
+
+</html>

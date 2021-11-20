@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Publications Page
+    </title>
+    
+    <link rel="stylesheet" href="style.css">
+    </head>     
+
+    <body>
+        <div class="head">
+            Add more Publications
+          </div>
+        <div class="navbar">
+            <div class= "Home">
+                <a href="index.html" target="_blank">Home</a>
+              </div>
+              <div class= "Publications">
+                <a href="pub.html" target="_blank">Publications</a>
+              </div>
+              <div class= "Press">
+                <a href="press.html" target="_blank">Press</a>
+              </div>
+              <div class= "research">
+                <a href="research.html" target="_blank">Research Interest and Programs</a>
+              </div>
+              <div class= "teaching">
+                <a href="teaching.html" target="_blank">Teaching</a>
+              </div>
+
+              <div class= "group">
+                <a href="group.html" target="_blank">Research Group</a>
+              </div>
+              <div class= "contact">
+                <a href="contact.html" target="_blank">Contact</a>
+              </div>
+        </div>
+        </div>
+  
+        <label for="pub">Publication type:</label>
+        <select id="publi" form="form">
+        <option value="Journal">Journal</option>
+        <option value="Conference">Conference</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Technical">Technical </option>
+        </select>
+        <br>
+        <br>
+
+        <form id="form" method="GET" action="pub.html">
+            Publication Author(s):<br>
+            <input id="title" type="text" name="title">
+            <br>
+            Publication Date:<br>
+            <input id="date" type="text" name="date">
+            <br>
+            Publication Link:<br>
+            <input id="article" type="url" name="article">
+            <br>
+            
+            <br>
+           
+            <input type='submit' value='Add Publication ' />  
+         
+         
+
+        </form>
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <script src="myscript.js"></script>
+
+    </body>
+
+</html>
